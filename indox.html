@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website Gilang</title>
+    <!-- material icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="ops/style.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" />
+  </head>
+  <body>
+    <div class="container">
+      <aside>
+        <div class="top">
+          <div class="logo">
+            <img src="imgs/G.png" alt="" />
+            <h2 class="text-muted">GIL<span class="danger">ANG</span></h2>
+          </div>
+          <div class="close" id="close-btn">
+            <span class="material-symbols-sharp"> close </span>
+          </div>
+        </div>
+
+        <div class="sidebar">
+          <a href="" class="active">
+            <span class="material-symbols-outlined"> person </span>
+            <h3>Profil</h3>
+          </a>
+          <a href="">
+            <span class="material-symbols-outlined"> inventory </span>
+            <h3>Product</h3>
+          </a>
+          <a href="">
+            <span class="material-symbols-sharp"> contacts </span>
+            <h3>Massages</h3>
+            <span class="message-count">10</span>
+          </a>
+          <a href="">
+            <span class="material-symbols-sharp"> dashboard </span>
+            <h3>Analytics</h3>
+          </a>
+          <a href="">
+            <span class="material-symbols-sharp"> Logout </span>
+            <h3>Logout</h3>
+          </a>
+        </div>
+      </aside>
+
+      <!-- end side -->
+
+      <main>
+        <h1>Profile</h1>
+
+        <div class="date">
+          <input type="date" />
+        </div>
+
+        <div class="insights">
+          <div class="sales">
+            <span class="material-symbols-sharp"> analytics </span>
+            <div class="middle">
+              <div class="lef">
+                <h3>
+                  Total <br />
+                  Jualan
+                </h3>
+                <h1>RP 00.00</h1>
+              </div>
+              <div class="progress">
+                <svg>
+                  <circle cx="38" cy="38" r="36"></circle>
+                </svg>
+                <div class="number">
+                  <p>81%</p>
+                </div>
+              </div>
+            </div>
+            <small class="text-muted">last 24 hours</small>
+          </div>
+          <!-- end of sales -->
+          <div class="expenses">
+            <span class="material-symbols-sharp"> data_usage </span>
+            <div class="middle">
+              <div class="lef">
+                <h3>Total pengeluaran</h3>
+                <h1>RP 00.00</h1>
+              </div>
+              <div class="progress">
+                <svg>
+                  <circle cx="38" cy="38" r="36"></circle>
+                </svg>
+                <div class="number">
+                  <p>81%</p>
+                </div>
+              </div>
+            </div>
+            <small class="text-muted">last 24 hours</small>
+          </div>
+          <!-- end of Expenses -->
+          <div class="incore">
+            <span class="material-symbols-sharp"> bar_chart </span>
+            <div class="middle">
+              <div class="lef">
+                <h3>Total Masukan</h3>
+                <h1>RP 00.00</h1>
+              </div>
+              <div class="progress">
+                <svg>
+                  <circle cx="38" cy="38" r="36"></circle>
+                </svg>
+                <div class="number">
+                  <p>81%</p>
+                </div>
+              </div>
+            </div>
+            <small class="text-muted">last 24 hours</small>
+          </div>
+          <!-- end of incore -->
+        </div>
+        <!-- end insights -->
+
+        <!-- order -->
+        <div class="recent-orders">
+          <h2>Recent Order</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>Nama Product</th>
+                <th>Nomor Product</th>
+                <th>Pembayaran</th>
+                <th>status</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>laptop</td>
+                <td>85631</td>
+                <td>due</td>
+                <td class="warning">Pending</td>
+                <td class="primary">Detail</td>
+              </tr>
+              <tr>
+                <td>laptop</td>
+                <td>85631</td>
+                <td>due</td>
+                <td class="warning">Pending</td>
+                <td class="primary">Detail</td>
+              </tr>
+              <tr>
+                <td>laptop</td>
+                <td>85631</td>
+                <td>due</td>
+                <td class="warning">Pending</td>
+                <td class="primary">Detail</td>
+              </tr>
+              <tr>
+                <td>laptop</td>
+                <td>85631</td>
+                <td>due</td>
+                <td class="warning">Pending</td>
+                <td class="primary">Detail</td>
+              </tr>
+            </tbody>
+          </table>
+          <a href="">Show All</a>
+        </div>
+      </main>
+      <!-- end of main -->
+
+      <div class="right">
+        <div class="top">
+          <button id="menu-btn">
+            <span class="material-symbols-sharp"> menu </span>
+          </button>
+          <div class="theme-toggler">
+            <span class="material-symbols-sharp active"> light_mode </span>
+            <span class="material-symbols-sharp"> dark_mode </span>
+          </div>
+          <div class="profile">
+            <div class="info">
+              <p>Hey ,<b>Gilang</b></p>
+              <small class="text-muted">admin</small>
+            </div>
+            <div class="profile-photo">
+              <img src="imgs/lang2.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+        <!-- end top -->
+        <div class="recent-updates">
+          <h2>Recent Updates</h2>
+          <div class="updates">
+            <div class="update">
+              <div class="profile-photo">
+                <img src="imgs/Ipman.jpg" alt="" />
+              </div>
+              <div class="massage">
+                <p><b>Ip Man</b> Woi Laptop Gueh Mana Anj**g</p>
+                <small class="text-muted">1 jam Yang lalu</small>
+              </div>
+            </div>
+            <div class="update">
+              <div class="profile-photo">
+                <img src="imgs/Kobo.jpg" alt="" />
+              </div>
+              <div class="massage">
+                <p><b>Kobo</b> Halo sayang..</p>
+                <small class="text-muted">20 Detik Yang lalu</small>
+              </div>
+            </div>
+            <div class="update">
+              <div class="profile-photo">
+                <img src="imgs/si cantik.jpg" alt="" />
+              </div>
+              <div class="massage">
+                <p><b>Baal Sayang</b> Sayang ,Lagi apa?Aku kangen</p>
+                <small class="text-muted">1 Detik Yang lalu</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end update -->
+        <div class="sales-analytics">
+          <h2>Sales Analytics</h2>
+          <div class="item online">
+            <div class="icon">
+              <span class="material-symbols-sharp"> local_shipping </span>
+            </div>
+            <div class="right">
+              <div class="info">
+                <h3>ONLINE ORDERS</h3>
+                <small class="text-muted">Terakhir 3 jam yang lalu</small>
+              </div>
+              <h5 class="success">29%</h5>
+              <h3>2134</h3>
+            </div>
+          </div>
+          <div class="item offline">
+            <div class="icon">
+              <span class="material-symbols-sharp"> local_shipping </span>
+            </div>
+            <div class="right">
+              <div class="info">
+                <h3>OFFLINE ORDERS</h3>
+                <small class="text-muted">Terakhir 3 jam yang lalu</small>
+              </div>
+              <h5 class="danger">-9%</h5>
+              <h3>1110</h3>
+            </div>
+          </div>
+          <div class="item customers">
+            <div class="icon">
+              <span class="material-symbols-sharp"> local_shipping </span>
+            </div>
+            <div class="right">
+              <div class="info">
+                <h3>NEW CUSTOMERS</h3>
+                <small class="text-muted">Terakhir 3 jam yang lalu</small>
+              </div>
+              <h5 class="success">+19%</h5>
+              <h3>3434</h3>
+            </div>
+          </div>
+          <div class="item add-product">
+            <div>
+              <span class="material-symbols-sharp"> add </span>
+              <h3>Tambah Product</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/skip.js"></script>
+  </body>
+</html>
